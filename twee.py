@@ -22,7 +22,7 @@ def tree(plist, l, a, f):
 
 def maketree():
     p = Turtle()
-    p.bgcolor("black")
+    turtle.bgcolor("black")
     p.pencolor("White")
     p.setundobuffer(None)
     p.hideturtle()
