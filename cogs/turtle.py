@@ -23,6 +23,12 @@ class turtle(commands.Cog):
         await ctx.send(file=discord.File('output.png'))
         await ctx.send("Done")
 
+    @commands.command(name="bbdes")
+    async def bbdes(self, ctx):
+        await ctx.send("Drawing... :turtle:")
+        os.system('python bbdes.py')
+        await ctx.send(file=discord.File('output.png'))
+        await ctx.send("Done")
             
 
 

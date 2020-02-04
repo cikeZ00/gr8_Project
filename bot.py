@@ -74,9 +74,10 @@ async def help(ctx):
     user = ctx.message.author
     helpembed = discord.Embed(color=discord.Color.red())
     helpembed.set_author(name="Help (Base commands)")
-    helpembed.add_field(name="ping", value="Pong! Bot latency.",inline=False)
-    helpembed.add_field(name="help_image", value="Shows help for image commands.",inline=False)
-    helpembed.add_field(name="help", value="Shows this message :rofl:",inline=False)
+    helpembed.add_field(name="!turtle", value="Usage: !turtle <size> <RRotation> <LRotation> <RepeatCount>",inline=False)
+    helpembed.add_field(name="!tree", value="Draws a tree!",inline=False)
+    helpembed.add_field(name="!bbdes", value="Draws a thing!",inline=False)
+    helpembed.add_field(name="!help", value="Shows this message :rofl:",inline=False)
     await user.send(embed=helpembed)
     await ctx.message.add_reaction(emoji="✅")
 
